@@ -1,7 +1,8 @@
 package com.national.testhilt.application
 
+import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
-class BaseApplication {
+class BaseApplication : Application() {
 }

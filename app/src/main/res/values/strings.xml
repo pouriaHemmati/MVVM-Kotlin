@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TestHilt</string>
+    <string name="about_splash">TestHilt</string>
 </resources>

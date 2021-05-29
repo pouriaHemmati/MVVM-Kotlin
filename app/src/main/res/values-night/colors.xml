@@ -8,8 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-
     <!-- splash -->
-    <color name="txt_splash">#000000</color>
-    <color name="background_splash">#453265</color>
+    <color name="txt_splash">#FFFFFFFF</color>
+    <color name="background_splash">#415254</color>
+
+
+
 </resources>

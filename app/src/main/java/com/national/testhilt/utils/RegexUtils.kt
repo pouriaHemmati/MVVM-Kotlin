@@ -14,18 +14,29 @@ object RegexUtils {
                 ")+"
     )
 
-    fun isValidEmail(email : String) : Boolean{
-        return EMAIL_ADDRESS.matcher(email).matches()
-    }
-
     private val MOBILE : Pattern = Pattern.compile(
         "(0|\\+98)?([ ]|,|-|[()]){0,2}9[1|2|3|4]([ ]|,|-|[()]){0,2}(?:[0-9]([ ]|,|-|[()]){0,2}){8}"
     )
 
+
+    /**
+     * check Email Address
+     */
+    fun isValidEmail(email : String) : Boolean{
+        return EMAIL_ADDRESS.matcher(email).matches()
+    }
+
+
+    /**
+     * check IRANIAN mobile number
+     */
     fun isValidMobile(mobile : String) : Boolean{
         return MOBILE.matcher(mobile).matches()
     }
 
+    /**
+     * check IRANIAN national code
+     */
     fun isValidNationalCode(nationalCode : String) : Boolean{
         when {
             nationalCode.trim() == "" -> {

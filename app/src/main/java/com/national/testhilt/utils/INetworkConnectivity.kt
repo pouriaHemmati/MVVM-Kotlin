@@ -2,7 +2,7 @@ package com.national.testhilt.utils
 
 import android.net.NetworkInfo
 
-interface NetworkConnectivity {
+interface INetworkConnectivity {
     fun getNetworkInfo() : NetworkInfo?
     fun isConnected() : Boolean
 }
